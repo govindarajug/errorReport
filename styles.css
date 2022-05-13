@@ -1,0 +1,25 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+.errors{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.errors > div {
+  display: flex;
+  align-items: center;
+}
+.errors > div > :nth-child(1){
+  width: 20px;
+  font-size: 14px;
+  font-weight: 100;
+}
+.errors > div > :nth-child(2){
+  background-color: grey;
+  margin: 2px;
+  margin-right: 0.3em;
+}
