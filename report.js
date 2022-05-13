@@ -6,6 +6,7 @@ const createAttributes = function (attrName, attrValue) {
   }
   return attrName + '="' + attrValue + '"';
 };
+
 const openTag = (tag, attributes) => '<' + tag + ' ' + attributes + '>';
 const closeTag = (tag) => '</'+tag+'>';
 const createTag = function (tag, content, attributes='') {
