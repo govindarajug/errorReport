@@ -38,7 +38,8 @@ const createReport = function (filePath) {
 
   const linkTag = '<link href="styles.css", rel="StyleSheet" />'
   const headTag = createTag('head', linkTag);
-  const html = createTag('html', headTag + bars);
+  const bodyTag = createTag('body', bars);
+  const html = createTag('html', headTag + bodyTag);
   return html;
 };
 
