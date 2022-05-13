@@ -2,16 +2,20 @@ body {
   width: 960px;
   margin: 0 auto;
   font-family: sans-serif;
-  font-size: 1.1em;
 }
 .errors{
-  height: 100%;
+  overflow: scroll;
+  height: 750px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-end;
 }
 .errors > div {
   display: flex;
+  min-width: 50px;
+  position: relative;
   align-items: center;
+  flex-direction: column;
 }
 .errors > div > :nth-child(1){
   width: 20px;
@@ -21,5 +25,12 @@ body {
 .errors > div > :nth-child(2){
   background-color: grey;
   margin: 2px;
-  margin-right: 0.3em;
+}
+.errors > div > :nth-child(3){
+  transform: rotate(50deg);
+  transform-origin: left;
+  font-size: 12px;
+  position: absolute;
+  left: 22px;
+  bottom: -15px;
 }

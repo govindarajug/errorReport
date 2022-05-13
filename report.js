@@ -24,7 +24,7 @@ const rectangle = function (w, h) {
 const getFileName = (filePath) => filePath.split('/').pop();
 
 const createBar = function ([filePath, errorCount]) {
-  const bar = rectangle(errorCount * 10, 30);
+  const bar = rectangle(30,errorCount * 10);
   const name = createTag('div', getFileName(filePath));
   return createTag('div', createTag('div', errorCount) + bar + name);
 };
