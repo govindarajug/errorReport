@@ -1,11 +1,21 @@
 body {
-  width: 960px;
-  margin: 0 auto;
+  /* width: 960px; */
+  margin:auto;
   font-family: sans-serif;
 }
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
 .errors{
-  overflow: scroll;
-  height: 750px;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
